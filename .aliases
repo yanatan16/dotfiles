@@ -10,7 +10,8 @@ alias -- -="cd -"
 alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
+alias p="cd ~/dev"
+alias dev="cd ~/dev"
 alias g="git"
 alias h="history"
 alias j="jobs"
@@ -125,7 +126,7 @@ for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
 done
 
 # Make Grunt print stack traces by default
-command -v grunt > /dev/null && alias grunt="grunt --stack"
+# command -v grunt > /dev/null && alias grunt="grunt --stack"
 
 # Stuff I never really use but cannot delete either because of http://xkcd.com/530/
 alias stfu="osascript -e 'set volume output muted true'"
@@ -140,3 +141,6 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
+
+# Sublime Text
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
