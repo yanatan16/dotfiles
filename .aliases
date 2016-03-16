@@ -144,3 +144,18 @@ alias reload="exec $SHELL -l"
 
 # Sublime Text
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+
+# Mongo
+alias mongo-server='mongod --config /usr/local/etc/mongod.conf'
+
+# Postgres
+alias postgres-server='postgres -D /usr/local/var/postgres -d 1'
+
+# go
+alias usego='gvm use go1.4.2'
+
+# Docker
+alias usedocker='eval $(docker-machine env dev)'
+
+# Webserver
+alias webserver='python -m SimpleHTTPServer'
