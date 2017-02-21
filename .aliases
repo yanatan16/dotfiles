@@ -159,3 +159,6 @@ alias usedocker='eval $(docker-machine env dev)'
 
 # Webserver
 alias webserver='python -m SimpleHTTPServer'
+
+# Emacs
+alias ec='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient'
