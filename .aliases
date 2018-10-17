@@ -16,6 +16,17 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 
+alias gray="cd ~/dev/activision/gamma-ray"
+alias atvi="cd ~/dev/activision"
+alias dtel="cd ~/dev/activision/direct-telemetry-clj"
+alias alc="cd ~/dev/activision/alchemy"
+
+gclone() 
+{ 
+  git clone git@as-github.activision.com:AS/$1 
+}
+
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
@@ -162,3 +173,8 @@ alias webserver='python -m SimpleHTTPServer'
 
 # Emacs
 alias ec='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient'
+
+# kafkacat
+alias kc-prd2='kafkacat -b prd2kafka11.asprd.tech:9092'
+alias kc-prd1='kafkacat -b prd1kafka11:9092'
+alias kc-tst4='kafkacat -b tst4kafka11.asprd.tech:9092'
